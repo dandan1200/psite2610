@@ -1,0 +1,89 @@
+:root {
+    --dark-red: #540202;
+    --light-red: #AB3131;
+    --light-yellow: #EDE0A6;
+    --light-green:#799163;
+    --dark-green: #507B58;
+}
+
+.div-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertically aligns content to the center */
+    align-items: center;
+}
+
+.btn-primary {
+    background-color: cyan;
+    color: black;
+    width: 150px;
+    height: 50px;
+
+}
+
+body {
+    background-color: var(--light-yellow);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1, h2, h3 {
+    color: var(--dark-red);
+}
+
+.retro-text {
+    text-shadow: 2px 2px var(--dark-green);
+    font-size: 2.5em;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ul li {
+    font-size: 1.2em;
+    margin-left: 20px;
+    color: var(--light-green)
+}
+
+a {
+    color: var(--light-green);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--light-red);
+}
+
+.animated-image {
+    width: 50%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    margin: 0 auto;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .animated-image {
+        width: 100%;
+    }
+}
+
+/* Dark Theme Styles */
+.dark-theme {
+    background-color: var(--dark-red);
+    color: var(--light-yellow);
+}
+
+.dark-theme a {
+    color: var(--light-green);
+}
+
+.dark-theme h1, .dark-theme h2, .dark-theme h3 {
+    color: var(--light-yellow);
+}
+
+.dark-theme .retro-text {
+    color: var(--light-yellow);
+}
